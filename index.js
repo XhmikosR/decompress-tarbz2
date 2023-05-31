@@ -1,11 +1,12 @@
-'use strict';
-const decompressTar = require('decompress-tar');
-const fileType = require('file-type');
-const isStream = require('is-stream');
-const seekBzip = require('seek-bzip');
-const unbzip2Stream = require('unbzip2-stream');
+import {Buffer} from 'node:buffer';
+import decompressTar from 'decompress-tar';
+import fileType from 'file-type';
+import {isStream} from 'is-stream';
+import seekBzip from 'seek-bzip';
+import unbzip2Stream from 'unbzip2-stream';
 
-module.exports = () => input => {
+// eslint-disable-next-line import/no-anonymous-default-export
+export default () => input => {
 	if (!Buffer.isBuffer(input) && !isStream(input)) {
 		return Promise.reject(new TypeError(`Expected a Buffer or Stream, got ${typeof input}`));
 	}
