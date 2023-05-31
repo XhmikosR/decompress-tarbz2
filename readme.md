@@ -1,4 +1,4 @@
-# decompress-tarbz2 [![CI](https://github.com/kevva/decompress-tarbz2/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/kevva/decompress-tarbz2/actions/workflows/ci.yml)
+# decompress-tarbz2 [![CI](https://github.com/XhmikosR/decompress-tarbz2/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/XhmikosR/decompress-tarbz2/actions/workflows/ci.yml)
 
 > tar.bz2 decompress plugin
 
@@ -6,15 +6,15 @@
 ## Install
 
 ```sh
-npm install decompress-tarbz2
+npm install @xhmikosr/decompress-tarbz2
 ```
 
 
 ## Usage
 
 ```js
-import decompress from 'decompress';
-import decompressTarbz from 'decompress-tarbz2';
+import decompress from '@xhmikosr/decompress';
+import decompressTarbz from '@xhmikosr/decompress-tarbz2';
 
 decompress('unicorn.tar.gz', 'dist', {
 	plugins: [
