@@ -40,7 +40,7 @@
 		"tarbz2"
 	],
 	"dependencies": {
-		"@xhmikosr/decompress-tar": "^6.0.1",
+		"@xhmikosr/decompress-tar": "^7.0.0",
 		"file-type": "^18.5.0",
 		"is-stream": "^3.0.0",
 		"seek-bzip": "^1.0.6",
