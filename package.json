@@ -13,7 +13,7 @@
 		"url": "https://github.com/kevva"
 	},
 	"engines": {
-		"node": "^14.14.0 || >=16.0.0"
+		"node": ">=18"
 	},
 	"scripts": {
 		"ava": "ava",
@@ -41,14 +41,19 @@
 	],
 	"dependencies": {
 		"@xhmikosr/decompress-tar": "^7.0.0",
-		"file-type": "^18.5.0",
-		"is-stream": "^3.0.0",
-		"seek-bzip": "^1.0.6",
+		"file-type": "^19.0.0",
+		"is-stream": "^4.0.1",
+		"seek-bzip": "^2.0.0",
 		"unbzip2-stream": "^1.4.3"
 	},
 	"devDependencies": {
-		"ava": "^4.3.3",
+		"ava": "^6.1.2",
 		"is-jpg": "^3.0.0",
-		"xo": "^0.54.2"
+		"xo": "^0.58.0"
+	},
+	"xo": {
+		"rules": {
+			"unicorn/prevent-abbreviations": "off"
+		}
 	}
 }
