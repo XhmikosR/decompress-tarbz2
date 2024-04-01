@@ -3,7 +3,10 @@
 	"version": "7.0.0",
 	"description": "decompress tar.bz2 plugin",
 	"license": "MIT",
-	"repository": "XhmikosR/decompress-tarbz2",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/XhmikosR/decompress-tarbz2.git"
+	},
 	"publishConfig": {
 		"access": "public"
 	},
@@ -40,7 +43,7 @@
 		"tarbz2"
 	],
 	"dependencies": {
-		"@xhmikosr/decompress-tar": "^7.0.0",
+		"@xhmikosr/decompress-tar": "^8.0.0",
 		"file-type": "^19.0.0",
 		"is-stream": "^4.0.1",
 		"seek-bzip": "^2.0.0",
