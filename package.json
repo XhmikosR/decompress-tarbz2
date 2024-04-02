@@ -43,9 +43,9 @@
 		"tarbz2"
 	],
 	"dependencies": {
-		"@xhmikosr/decompress-tar": "^8.0.0",
+		"@xhmikosr/decompress-tar": "^8.0.1",
 		"file-type": "^19.0.0",
-		"is-stream": "^4.0.1",
+		"is-stream": "^2.0.1",
 		"seek-bzip": "^2.0.0",
 		"unbzip2-stream": "^1.4.3"
 	},
