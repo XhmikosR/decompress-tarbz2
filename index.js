@@ -1,7 +1,7 @@
 import {Buffer} from 'node:buffer';
 import decompressTar from '@xhmikosr/decompress-tar';
 import {fileTypeFromBuffer} from 'file-type';
-import {isStream} from 'is-stream';
+import isStream from 'is-stream';
 import seekBzip from 'seek-bzip';
 import unbzip2Stream from 'unbzip2-stream';
 
