@@ -16,9 +16,7 @@ const decompressTarBz2 = () => async input => {
 		if (!type || type.mime !== 'application/x-bzip2') {
 			return [];
 		}
-	}
 
-	if (Buffer.isBuffer(input)) {
 		return decompressTar()(seekBzip.decode(input));
 	}
 
