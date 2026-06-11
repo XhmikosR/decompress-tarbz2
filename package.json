@@ -46,7 +46,6 @@
 		"@xhmikosr/decompress-tar": "^9.0.1",
 		"file-type": "^21.3.4",
 		"is-stream": "^4.0.1",
-		"seek-bzip": "^2.0.0",
 		"unbzip2-stream": "^1.4.3"
 	},
 	"devDependencies": {
