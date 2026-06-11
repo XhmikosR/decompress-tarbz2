@@ -34,7 +34,7 @@ Returns both a `Promise` for a `Buffer` and a [`Duplex stream`](https://nodejs.o
 
 #### input
 
-Type: `Buffer` `Stream`
+Type: `Buffer|Stream`
 
 Buffer to decompress.
 
