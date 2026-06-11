@@ -29,6 +29,16 @@ test('extract file using streams', async t => {
 	t.true(await isJpg(files[0].data));
 });
 
+test('extract file from multi-stream bzip2', async t => {
+	const buf = await fsP.readFile(path.join(__dirname, 'fixtures', 'multistream.tar.bz2'));
+	const files = await decompressTarBz2()(buf);
+	const single = await decompressTarBz2()(await fsP.readFile(path.join(__dirname, 'fixtures', 'file.tar.bz2')));
+
+	t.is(files[0].path, 'test.jpg');
+	t.true(await isJpg(files[0].data));
+	t.deepEqual(files[0].data, single[0].data);
+});
+
 test('return empty array if non-valid file is supplied', async t => {
 	const buf = await fsP.readFile(__filename);
 	const files = await decompressTarBz2()(buf);

@@ -2,13 +2,11 @@
 
 > tar.bz2 decompress plugin
 
-
 ## Install
 
 ```sh
 npm install @xhmikosr/decompress-tarbz2
 ```
-
 
 ## Usage
 
@@ -25,7 +23,6 @@ decompress('unicorn.tar.gz', 'dist', {
 });
 ```
 
-
 ## API
 
 ### decompressTarbz()(input)
@@ -34,10 +31,9 @@ Returns both a `Promise` for a `Buffer` and a [`Duplex stream`](https://nodejs.o
 
 #### input
 
-Type: `Buffer` `Stream`
+Type: `Buffer|Stream`
 
 Buffer to decompress.
-
 
 ## License
 
