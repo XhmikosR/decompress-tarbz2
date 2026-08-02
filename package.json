@@ -57,5 +57,8 @@
 		"rules": {
 			"unicorn/prevent-abbreviations": "off"
 		}
+	},
+	"allowScripts": {
+		"unrs-resolver@1.11.1": true
 	}
 }
